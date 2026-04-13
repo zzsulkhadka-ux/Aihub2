@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIHub</title>
 
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <h2>AIHub</h2>
+    <button onclick="openModal()">Sign Up</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>All AI Tools FREE</h1>
+
+    <!-- OWNER TEXT -->
+    <div class="owner-text">
+        Made by Mr Owner Sulav Khadka
+    </div>
+
+    <!-- WELCOME TEXT -->
+    <div class="welcome-text">
+        Welcome back Sulav
+    </div>
+
+    <button onclick="googleLogin()">Continue with Google</button>
+</section>
+
+<!-- MODAL -->
+<div id="authModal" class="modal">
+    <div class="modal-content">
+        <span onclick="closeModal()" class="close">&times;</span>
+        <h2 id="modalTitle">Sign Up</h2>
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <button id="authBtn">Sign Up</button>
+        <p onclick="toggleAuth()">Switch to Sign In</p>
+    </div>
+</div>
+
+<!-- CHAT -->
+<section class="chat">
+    <div id="chatMessages"></div>
+
+    <input id="chatInput" placeholder="Type message">
+    <button onclick="sendMessage()">Send</button>
+</section>
+
+<!-- IMPORTANT -->
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
